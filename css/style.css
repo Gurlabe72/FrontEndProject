@@ -19,6 +19,7 @@ h2 {
     margin:0;
 }
 img {
+/* display block is used to make an element occupy the width of that line */
     display: block;
     /* max width is always 100% of the page */
     width:100%;
@@ -28,7 +29,70 @@ img {
 main{
     max-width: 900px;
     margin: auto;
-/* rgba stands for red, green, blue, and a(alpha) is opacity */
+/* rgba stands for red, green, blue, and a(alpha) is opacity
+The pixel values are the horizontal offset, the vertical offset, and the blur */
     box-shadow: 30px 0px 40px rgba(0,0,0,0.4),
     -30px 0px 40px rgba(0,0,0,0.4);
 }
+
+#start {
+    background: violet;
+}
+
+#start-text {
+    /* be ready to explain "flex"  */
+    display: flex;
+    /* vw is viewport widths vh is vertical heights: from 
+    my understading it is a unit of measurment that is 
+    used to delegate the amount of space their element occupies on a page. */
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right:1rem;
+    padding-left: 1rem;
+}
+/* do this with bootstrap. This is adding
+ the white border to the button.  */
+ 
+#start-text h2{
+    color:white;
+}
+/* landing image is supposed to take up half the page 
+its not working */
+
+ #start-image {
+     /* background image will be applied using css but it wont show
+     up until you position it  */
+    background: url(https://unsplash.com/photos/De8wMYoSSBc);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh; 
+    /* 0 and 1 stand for flex grow and flex shrink */
+    flex: 0 1 60vh;
+    margin: 0;
+}
+.btn {
+    padding:0.5rem, 2rem;
+    border: 1px white solid;
+    /* use inline-block to make space between lines */
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    /* use text decoration to get rid of the underline 
+    from the html */
+    text-decoration: none;
+    color: black;
+    /* this is linked with the .btn:hover 
+    that we have below. when you hover over the button,
+     there is a slow transition of the button filling in color  */
+    transition: background 500ms ease;
+    
+}
+
+.btn:hover {
+background: #f4f4f4;
+}
+
