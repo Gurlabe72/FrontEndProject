@@ -1,220 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Personality Quiz</title>
+    <title>Quiz</title>
 </head>
+
 <body>
-  <main>
-      <form id= "questionaire" onsubmit ="event.preventDefault(); submitForm();">
-        <div id="start">
-            <div id= "start-text">
-                <div id = "start-text-inner">
-                    <h1>Personality Quiz</h1>
-                    <h2>Gurlabe is About to Judge You</h2>
-                    <a href="#####" class="btn">Take the Quiz!                        
-                    </a>
+    <main>
+
+        <form id="questionaire" onsubmit="event.preventDefault(); submitForm();">
+            <div id="start">
+                <div id="start-text">
+                    <div id="start-text-inner">
+                        <h1>
+                            Quiz
+                        </h1>
+                        <h2>
+                            Im about to judge the heck out of ya.
+                        </h2>
+                        <label>
+                            name
+                        </label>
+                        <input type="name" id="dummy" placeholder="Enter Your Shoe Size">
+                        <a href="#####" class="btn">Take the Quiz!
+                        </a>
+                    </div>
+                    <div>
+
+                    </div>
                 </div>
+                <div id="start-image"></div>
             </div>
-        <div id="start-image"></div>
-      </div>
-    <div id = "images">
- 
-        <div id ="header">
-            <h2>Reflect on these statement and decide which response you agree the most with</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, aspernatur?</p>
-        </div>
+            <div id="images">
 
-            <img src="https://source.unsplash.com/random/300x500" alt="">
+                <div id="header">
+                    <h2>Reflect on these statement and decide which response you agree the most with</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, aspernatur?</p>
+                </div>
 
-        </div>
-          <div class="caption">      
-    <h3>Question 1</h3>
-    <p>When performing a job, it is most important for me to...</p>
-        </div> 
-        
-            <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="questionOne" id="optionsRadios1" value="0" >
-                      ...do it correctly, regardless of the time involved.
-            </label>
-             </div>
-             <div class="form-check">
-            <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="questionOne" id="optionsRadios2" value="1" >
-                     ...set deadlines and get it done.
-            </label>
+                <img src="https://source.unsplash.com/random/100x100" alt="">
+
             </div>
-            <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="questionOne" id="optionsRadios3" value="2" >
-                    ...work as a team, cooperatively with others 
-            </label>
+            <div class="caption">
+                <h3>Question 1</h3>
+                <p>When performing a job, it is most important for me to...</p>
             </div>
-        </div>
-        <div class="form-check">
-        <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="questionOne" id="optionsRadios3" value="3" >
-                   ...demonstrate my talents and enthusiasm.
-        </label>
-        </div>
-            </fieldset>
-         
-        
-        <div class="caption">
-            <img src="https://source.unsplash.com/random/301x500" alt="">   
-        </div>
-       
-<h3>Question Two</h3>
-<p>The most enoyable part of working on a job is...</p>
-        </div>
-        
-            <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="questionTwo" id="optionsRadios1" value="0" >
-                    ...the information you need to do it.
-            </label>
-             </div>
-             <div class="form-check">
-            <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="questionTwo" id="optionsRadios2" value="1">
-                      ...the results you achieve when it's done.
-            </label>
+
+            <div class="checkbox">
+                <label class="responseA">
+                    <input type="checkbox" class="check" name="questionOne" id="optionsRadios1" value="0"> ...do
+                    it correctly, regardless of the time involved.
+                </label>
             </div>
-            <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="questionTwo" id="optionsRadios3" value="2" >
-                      ...the people you meet or work with 
-            </label>
+            <div class="checkbox">
+                <label class="responseB">
+                    <input type="checkbox" class="check" name="questionOne" id="optionsRadios2" value="1"> ...set
+                    deadlines and get it done.
+                </label>
             </div>
-        </div>
-        <div class="form-check">
-        <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="questionTwo" id="optionsRadios3" value="3" >
-                  ...seeing how the job contributes to the program. 
-        </label>
-        </div>
-            </fieldset>
-            
-       
-            <img src="https://source.unsplash.com/random/302x500" alt="">   
-        <div class="caption">
-<h3>Question Three</h3>
-<p>When I have several ways to get a job done, I usually...</p/>
-        </div>
-        
-            <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="questionThree" id="optionsRadios1" value="0" >
-                      ...review the pros and cons of each way you choose. 
-            </label>
-             </div>
-             <div class="form-check">
-            <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="questionThree" id="optionsRadios2" value="1" >
-                     ...choose a way that I can begin to work immediately.
-            </label>
-            </div>
-            <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="questionThree" id="optionsRadios3" value="2" >
-                    ...discuss ways with others and choose the one most forward.
-        </label>
+            <div class="checkbox">
+                <label class="responseC">
+                    <input type="checkbox" class="check" name="questionOne" id="optionsRadios3" value="2"> ...work
+                    as a team, cooperatively with others
+                </label>
             </div>
             </div>
-            <div class="form-check">
-            <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="questionThree" id="optionsRadios3" value="3" >
-                  ...review the ways and follow my "gut" sense about what will work the best.  
-         </label>
-            </div>
-           </fieldset>
-        
-        
-             <img src="https://source.unsplash.com/random/303x500" alt="">   
-        </div>
-        <div class="caption">
-<h3>Question Four</h3>
-<p>In working on a long-term job, it is most important to me to...</p>
-        </div> 
-        
-            <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="questionFour" id="optionsRadios1" value="0" >
-                      ...understand and complete each step before going to the next step.
-            </label>
-             </div>
-             <div class="form-check">
-            <label class="form-check-label">
-            <input type="radio" class="form-check-input"                    name="questionFour" id="optionsRadios2" value="1">
-                      ...seek a fast, efficient way to complete it. 
-            </label>
-            </div>
-            <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="questionFour" id="optionsRadios3" value="2">
-                      ...work on it with others in a team
-            </label>
-            </div>
-            </div>
-            <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="questionFour" id="optionsRadios3" value="3" >
-                    ...keep the job stimulating and exciting. 
-            </label>
+            <div class="checkbox">
+                <label class="responseD">
+                    <input type="checkbox" class="check" name="questionOne" id="optionsRadios3" value="3"> ...demonstrate
+                    my talents and enthusiasm.
+                </label>
             </div>
             </fieldset>
-           
-      
-            <img src="https://source.unsplash.com/random/304x500" alt="">   
-        </div>
-        <div class="caption">
-        <h3>Question Five</h3>
-        <p>I am willing to take a risky action if...</p>
-        </div>
 
-    <div class="form-check">
-    <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="questionFive" id="optionsRadios1" value="0">
-              ...there are facts to support my action. 
-    </label>
-     </div>
-     <div class="form-check">
-    <label class="form-check-label">
-    <input type="radio" class="form-check-input" name="questionFive" id="optionsRadios2" value="1" >
-              ...it gets the job done.
-    </label>
-    </div>
-    <div class="form-check">
-    <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="questionFive" id="optionsRadios3" value="2" >
-              ...it will not hurt others' feelings.
-    </label>
-    </div>
-    </div>
-    <div class="form-check">
-    <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="questionFive" id="optionsRadios3" value="3" >
-            ...it feels right for the situation.  
-    </label>
-    </div>
-    </fieldset>
-    <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </main>
-  <footer>
-      <h3>This Test is desiged to ....</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, iure.</p>
-  </footer>
-  <script
-  src="http://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
-  
+
+            <div class="caption">
+                <img src="https://source.unsplash.com/random/101x100" alt="">
+            </div>
+
+            <h3>Question Two</h3>
+            <p>The most enoyable part of working on a job is...</p>
+            </div>
+
+            <div class="checkbox">
+                <label class="responseA">
+                    <input type="checkbox" class="check" name="questionTwo" id="optionsRadios1" value="0"> ...the
+                    information you need to do it.
+                </label>
+            </div>
+            <div class="checkbox">
+                <label class="responseB">
+                    <input type="checkbox" class="check" name="questionTwo" id="optionsRadios2" value="1"> ...the
+                    results you achieve when it's done.
+                </label>
+            </div>
+            <div class="checkbox">
+                <label class="responseC">
+                    <input type="checkbox" class="check" name="questionTwo" id="optionsRadios3" value="2"> ...the
+                    people you meet or work with
+                </label>
+            </div>
+            </div>
+            <div class="checkbox">
+                <label class="responseD">
+                    <input type="checkbox" class="check" name="questionTwo" id="optionsRadios3" value="3"> ...seeing
+                    how the job contributes to the program.
+                </label>
+            </div>
+            </fieldset>
+
+
+            <img src="https://source.unsplash.com/random/100x100" alt="">
+            <div class="caption">
+                <h3>Question Three</h3>
+                <p>When I have several ways to get a job done, I usually...</p/>
+            </div>
+
+            <div class="checkbox">
+                <label class="responseA">
+                    <input type="checkbox" class="check" name="questionThree" id="optionsRadios1" value="0"> ...review
+                    the pros and cons of each way you choose.
+                </label>
+            </div>
+            <div class="checkbox">
+                <label class="responseB">
+                    <input type="checkbox" class="check" name="questionThree" id="optionsRadios2" value="1"> ...choose
+                    a way that I can begin to work immediately.
+                </label>
+            </div>
+            <div class="checkbox">
+                <label class="responseC">
+                    <input type="checkbox" class="check" name="questionThree" id="optionsRadios3" value="2"> ...discuss
+                    ways with others and choose the one most forward.
+                </label>
+            </div>
+            </div>
+            <div class="checkbox">
+                <label class="responseD">
+                    <input type="checkbox" class="check" name="questionThree" id="optionsRadios3" value="3"> ...review
+                    the ways and follow my "gut" sense about what will work the best.
+                </label>
+            </div>
+            </fieldset>
+
+
+            <img src="https://source.unsplash.com/random/200x100" alt="">
+            </div>
+            <div class="caption">
+                <h3>Question Four</h3>
+                <p>In working on a long-term job, it is most important to me to...</p>
+            </div>
+
+            <div class="checkbox">
+                <label class="responseA">
+                    <input type="checkbox" class="check" name="questionFour" id="optionsRadios1" value="0"> ...understand
+                    and complete each step before going to the next step.
+                </label>
+            </div>
+            <div class="checkbox">
+                <label class="responseB">
+                    <input type="checkbox" class="fcheck" name="questionFour" id="optionsRadios2" value="1"> ...seek
+                    a fast, efficient way to complete it.
+                </label>
+            </div>
+            <div class="checkbox">
+                <label class="responseC">
+                    <input type="checkbox" class="check" name="questionFour" id="optionsRadios3" value="2"> ...work
+                    on it with others in a team
+                </label>
+            </div>
+            </div>
+            <div class="checkbox">
+                <label class="responseD">
+                    <input type="checkbox" class="check" name="questionFour" id="optionsRadios3" value="3"> ...keep
+                    the job stimulating and exciting.
+                </label>
+            </div>
+            </fieldset>
+
+            <img src="https://source.unsplash.com/random/104x100" alt="">
+            </div>
+            <div class="checkbox">
+                <h3>Question Five</h3>
+                <p>I am willing to take a risky action if...</p>
+            </div>
+
+            <div class="checkbox">
+                <label class="responseA">
+                    <input type="checkbox" class="check" name="questionFive" id="optionsRadios1" value="0"> ...there
+                    are facts to support my action.
+                </label>
+            </div>
+            <div class="checkbox">
+                <label class="responseB">
+                    <input type="checkbox" class="check" name="questionFive" id="optionsRadios2" value="1"> ...it
+                    gets the job done.
+                </label>
+            </div>
+            <div class="checkbox">
+                <label class="responseC">
+                    <input type="checkbox" class="check" name="questionFive" id="optionsRadios3" value="2"> ...it
+                    will not hurt others' feelings.
+                </label>
+            </div>
+            </div>
+            <div class="checkbox">
+                <label class="responseD">
+                    <input type="checkbox" class="check" name="questionFive" id="optionsRadios3" value="3"> ...it
+                    feels right for the situation.
+                </label>
+            </div>
+            </fieldset>
+            <!-- added onCLick to fkr submit page to redirect to page with score and attribute -->
+            <button type="submit" class="float-left submit-button">Submit</a>
+        </form>
+    </main>
+    <footer>
+        <h3>This Test is desiged to ....</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, iure.</p>
+    </footer>
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js">
+    </script>
+
 </body>
+
 </html>
