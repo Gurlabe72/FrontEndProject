@@ -46,7 +46,7 @@ The pixel values are the horizontal offset, the vertical offset, and the blur */
     my understading it is a unit of measurment that is 
     used to delegate the amount of space their element occupies on a page. */
     flex: 0 1 40vw;
-    height: 50vh;
+    height: 50 vh; 
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -65,11 +65,10 @@ its not working */
  #start-image {
      /* background image will be applied using css but it wont show
      up until you position it  */
-    background: url(https://unsplash.com/photos/De8wMYoSSBc);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50vh; 
+    height: 50vh;
     /* 0 and 1 stand for flex grow and flex shrink */
     flex: 0 1 60vh;
     margin: 0;
@@ -93,6 +92,53 @@ its not working */
 }
 
 .btn:hover {
-background: #f4f4f4;
+background: white;
+}
+
+#header {
+    padding:1.5rem;
+    text-align: center;
+    background: black;
+    color: white;
+
+}
+
+#header h2 {
+    border-left: double 1px white;
+    border-right: double 1px white;
+    display: inline-block;
+    padding-right:1rem;
+    padding-left:1rem;
+}
+.caption {
+    padding:0.8rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: black;
+}
+
+footer h3 {
+    font-size:3rem;
+    margin-bottom: 0; 
+}
+
+@media only screen and (min-width: 320px){
+   body {background: black;
+        color: turquoise;
+}
+}
+@media only screen and (min-width: 768px){
+    body{background:turquoise;
+        color: black;}
+}
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
 }
 
