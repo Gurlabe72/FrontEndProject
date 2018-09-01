@@ -27,7 +27,7 @@ img {
 
 }
 
-main{
+main {
     max-width: 900px;
     margin: auto;
 /* rgba stands for red, green, blue, and a(alpha) is opacity
@@ -115,7 +115,7 @@ background: white;
     padding:0.8rem;
     text-align: center;
 }
-
+ 
 footer {
     text-align: center;
     padding: 2rem 1rem;
@@ -142,5 +142,3 @@ footer h3 {
         width: 100%;
     }
 }
-
- 
