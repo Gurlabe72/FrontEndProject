@@ -41,16 +41,16 @@ function submitForm(){
     localStorage.setItem("Name", nameInput);
     
     if (total >= 0 && total <= 60) {
-        alert("You failed")
+        alert("You are Analytical")
       }
        else if (total>=61  && total <= 70 ) {
-        alert("Pass")
+        alert("You ar a driver")
       }
         else if (total >= 76 && total <= 89) {
-            alert("Great Job! You Pass")
+            alert("You are amiable")
 }
       else {
-          alert("You got an A!!")
+          alert("Just a great great person")
       }
     }
 
