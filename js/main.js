@@ -8,6 +8,23 @@
 // document.getElementById("myButton").onclick = function () {
 //     location.href = "Attribute.html";
 // };
+
+function isChecked (){
+    var questionOne = document.getElementsByName('questionOne').checked;
+    var questionTwo = document.getElementsByName('questionTwo').checked;
+    var questionThree = document.getElementsByName('questionThree').checked;
+    var questionFour = document.getElementsByName('questionFour').checked;
+
+    if ("questionOne"== false && "questionTwo"==false && "questionThree"== false && "questionFour"==false) {
+        alert('Please check to see if you answered all the question');
+        return false;
+
+    }
+    else {
+        return true;
+    }
+}
+
 function submitForm(){
     var form = new FormData(document.querySelector("#questionaire"));
     console.log(form.get("questionOne"));
@@ -22,20 +39,21 @@ function submitForm(){
         var nameInput = document.querySelector("#dummy").value;
      localStorage.setItem("total", total);
     localStorage.setItem("Name", nameInput);
- 
-    if (total >= 0 && total <= 2) {
-        alert("You are Amiable")
+    
+    if (total >= 0 && total <= 60) {
+        alert("You failed")
       }
-       else if (total>= 3 && total <= 5 ) {
-        alert("You are Not Amiable")
+       else if (total>=61  && total <= 70 ) {
+        alert("Pass")
       }
-        else if (total >= 6 && total <= 8) {
-            alert("you are probably amiable?")
+        else if (total >= 76 && total <= 89) {
+            alert("Great Job! You Pass")
 }
       else {
-          alert("you are definetly maybe amiable")
+          alert("You got an A!!")
       }
-    //window.location.href = "";
-
-
     }
+
+      
+
+    //window.location.href = 
