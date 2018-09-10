@@ -24,36 +24,37 @@ function isChecked (){
         return true;
     }
 }
-
+//This function pinpoints data from the #questionaire 
 function submitForm(){
+    //form variable accesses the form data for every question.
     var form = new FormData(document.querySelector("#questionaire"));
-    console.log(form.get("questionOne"));
-    console.log(form.get("questionTwo"));
-    console.log(form.get("questionThree"));
-    console.log(form.get("questionFour"));
-    console.log(form.get("questionFive"));
-    var sum = +form.get("questionOne") + +form.get("questionTwo") + +form.get("questionThree") + +form.get("questionFour") + +form.get("questionFive");
-    console.log(sum);
+    //sum variable utilizes the form and pinpoints what value it would like to add 
+    var sum = +form.get("questionOne") + +form.get("questionTwo") + +form.get("questionThree") + 
+                +form.get("questionFour") + +form.get("questionFive");
+    //Output variable 
+    var total = sum;
+    //Our Local Storage variable 
+    var nameInput = document.querySelector("#dummy").value;
+                     localStorage.setItem("total", total);
+                    localStorage.setItem("Name", nameInput);
 
-       var total = sum;
-        var nameInput = document.querySelector("#dummy").value;
-     localStorage.setItem("total", total);
-    localStorage.setItem("Name", nameInput);
-    
-    if (total >= 0 && total <= 60) {
+//This 'if' statement will analyze the outcome of the function and alert you with your personality 
+//Highest score you can receive in this this assessment is 15. So I split the score ranges into
+//four different categories. 
+    if (total >= 0 && total <= 4 {
         alert("You are Analytical")
       }
-       else if (total>=61  && total <= 70 ) {
+       else if (total>=5  && total <= 8) {
         alert("You ar a driver")
       }
-        else if (total >= 76 && total <= 89) {
+        else if (total >= 8 && total <= 12) {
             alert("You are amiable")
 }
       else {
-          alert("Just a great great person")
+          alert("You are expressive")
       }
     }
 
       
 
-    //window.location.href = 
+    //window.location.href =
